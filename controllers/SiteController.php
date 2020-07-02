@@ -17,7 +17,8 @@ class SiteController extends Controller
      */
     public function actionSaluda()
     {
-        return $this->render("saluda");
+        $mensaje = "Hola Mundo";
+        return $this->render("saluda",["mensaje" => $mensaje]);
     }
 
     public function behaviors()
