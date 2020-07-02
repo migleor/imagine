@@ -20,7 +20,7 @@ class SiteController extends Controller
         $mensaje = "Hola Mundo";
         $numeros = [0, 1, 2, 3, 4];
         return $this->render("saluda",[
-            "mensaje" => $mensaje, 
+            "mensaje" => $mensaje,
             "numeros"=>$numeros,
             "get" => $get
         ]);
