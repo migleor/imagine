@@ -17,7 +17,7 @@ $form  = ActiveForm::begin([
 </div>
 
 <div class="form-group">
-    <?= $form->field($model, "mail")->input("mail")?>
+    <?= $form->field($model, "email")->input("email")?>
 </div>
 
 <?=  Html::submitButton("Enviar",["class" => "btn btn-primary"])?>
