@@ -41,7 +41,7 @@ class SiteController extends Controller
         $this->redirect(["site/formulario","mensaje" => $mensaje]);
     }
 
-    public function actionValidarFormulario(){
+    public function actionValidarformulario(){
         $model = new ValidarFormulario;
         if($model->load(Yii::$app->request->post())){
             if($model->validate()){
