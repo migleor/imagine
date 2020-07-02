@@ -26,9 +26,9 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionformulario($mensaje = null){
+    public function actionFormulario($mensaje = null){
         return $this->render("formulario", [
-            "mensaje"=>$mensaje
+            "mensaje" => $mensaje
         ]);
     }
 

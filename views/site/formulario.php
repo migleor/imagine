@@ -9,7 +9,7 @@ use yii\helpers\Html;
     Url::toRoute("site/request"),//action
     "get",//method
     ["class"=>"form-inline"] //options
-); 
+);
 ?>
 
 <div class="form-group">
