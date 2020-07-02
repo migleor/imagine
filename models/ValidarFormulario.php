@@ -21,8 +21,8 @@ class ValidarFormulario extends model{
 
     public function attributeLabels(){
         return [
-            'nombre'=>'Nombre: ',
-            'email' = 'Mail: ',
+            'nombre'=> 'Nombre: ',
+            'email' => 'Mail: ',
         ];
     }
 
