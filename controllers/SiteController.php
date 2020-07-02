@@ -15,11 +15,15 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function actionSaluda()
+    public function actionSaluda($get = "Tutorial Yii")
     {
         $mensaje = "Hola Mundo";
         $numeros = [0, 1, 2, 3, 4];
-        return $this->render("saluda",["mensaje" => $mensaje, "numeros"=>$numeros]);
+        return $this->render("saluda",[
+            "mensaje" => $mensaje, 
+            "numeros"=>$numeros,
+            "get" => $get
+        ]);
     }
 
     public function behaviors()

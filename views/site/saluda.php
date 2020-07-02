@@ -6,3 +6,4 @@
     }
     ?>
 </pre>
+<div class="alert alert-info">Parametro Get <?= $get ?></div>
