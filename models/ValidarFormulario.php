@@ -10,12 +10,12 @@ class ValidarFormulario extends model{
 
     public function rules(){
         return [
-            ["nombre","required", "message"=>"Campo Requerido"],
-            ["nombre","match", "pattern" => "/^.{3,50}$/","message"=>"Minimo 3, maximo 50 caracteres"],
-            ["nombre","match", "pattern" => "/^.[0-9a-z]+$/i","message"=>"Solo numeros o letras"],
-            ["email","required", "message"=>"Campo Requerido"],
-            ["email","match", "pattern" => "/^.{5,80}$/","message"=>"Minimo 3, maximo 50 caracteres"],
-            ["email","email", "message"=>">Formato no valido"],
+            ['nombre', 'required', 'message' => 'Campo requerido'],
+            ['nombre', 'match', 'pattern' => "/^.{3,50}$/", 'message' => 'Mínimo 3 y máximo 50 caracteres'],
+            ['nombre', 'match', 'pattern' => "/^[0-9a-z]+$/i", 'message' => 'Sólo se aceptan letras y números'],
+            ['email', 'required', 'message' => 'Campo requerido'],
+            ['email', 'match', 'pattern' => "/^.{5,80}$/", 'message' => 'Mínimo 5 y máximo 80 caracteres'],
+            ['email', 'email', 'message' => 'Formato no válido'],
         ];
     }
 
